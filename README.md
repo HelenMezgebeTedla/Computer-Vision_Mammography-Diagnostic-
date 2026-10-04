@@ -42,10 +42,6 @@ If the upload shows a 403 error, run:
 streamlit run app.py --server.enableXsrfProtection=false --server.enableCORS=false
 ```
 
-## Known issue: Keras version
-
-The model was saved with Keras 3 and failed to load on Keras 2.15. After upgrading to TensorFlow 2.20 it still failed (`Layer "dense" expects 1 input(s), but it received 2`). `rebuild_model.py` fixes this by building the same model in code and loading the saved weights. No retraining is needed. Use TensorFlow 2.16 or higher.
-
 ## Limitations
 
 Small 150 x 150 images lose fine detail. The model was trained on limited data and has no clinical testing. The confidence score is not a medical probability.
