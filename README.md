@@ -16,22 +16,6 @@ A deep learning project that classifies mammography images as **Benign** or **Ma
 | `csv/` | Labels and metadata |
 | `requirements.txt` | Python packages |
 
-## Model
-
-Transfer learning with **ResNet50**: Input (150 x 150 x 3) > ResNet50 > GlobalAveragePooling2D > Dense(128, ReLU) > Dropout(0.4) > Dense(1, Sigmoid).
-
-- Score of 0.5 or higher: **Malignant**
-- Score below 0.5: **Benign**
-
-Images are converted to RGB, resized to 150 x 150, and passed through ResNet50 `preprocess_input`.
-
-## Results
-
-| Metric | Value |
-| --- | --- |
-| Accuracy | [FILL IN] |
-| Recall | [FILL IN] |
-| AUC | [FILL IN] |
 
 ## Run it
 
