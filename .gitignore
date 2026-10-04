@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+jpeg/
+*.h5
+*.keras
+temp_portal_inference.jpg
